@@ -1,27 +1,49 @@
 # FormulariosReactivos
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.9.
+Aplicación Angular 14 (abril de 2023) con un formulario de registro hecho con formularios reactivos, para practicar validación.
 
-## Development server
+## Qué hay
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Formulario con nombre completo, usuario (de 6 a 20 caracteres), correo, contraseña (de 6 a 40), confirmación de contraseña y casilla de aceptar los términos.
+- Validadores de Angular (`required`, `minLength`, `maxLength`, `email`, `requiredTrue`) y un validador propio en `validation.ts` que comprueba que las dos contraseñas coinciden.
+- Los errores se muestran al enviar. Si todo es válido, el formulario se escribe en la consola; no se envía a ningún servidor.
+- `ng build` compila sin errores. No he abierto la aplicación en un navegador desde aquí.
 
-## Code scaffolding
+## Cómo probarlo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+npm ci
+npx ng serve
+```
 
-## Build
+y abre `http://localhost:4200/`.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Licencia
 
-## Running unit tests
+MIT, ver [LICENSE](LICENSE).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+# FormulariosReactivos (English)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+An Angular 14 app (April 2023) with a sign-up form built with reactive forms, to practice validation.
 
-## Further help
+## What's inside
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- A form with full name, username (6 to 20 characters), email, password (6 to 40), password confirmation and a terms checkbox.
+- Angular validators (`required`, `minLength`, `maxLength`, `email`, `requiredTrue`) and a custom validator in `validation.ts` that checks both passwords match.
+- Errors show on submit. If everything is valid, the form is written to the console; nothing is sent to a server.
+- `ng build` compiles without errors. I have not opened the app in a browser from here.
+
+## Trying it
+
+```
+npm ci
+npx ng serve
+```
+
+then open `http://localhost:4200/`.
+
+## License
+
+MIT, see [LICENSE](LICENSE).
